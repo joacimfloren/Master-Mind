@@ -1,0 +1,23 @@
+﻿<Window x:Class="MasterMindGraph.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:MasterMindGraph"
+        Title="MasterMind" Height="550" Width="250"
+        Background="Lavender">
+    <UniformGrid Name="theGrid" Rows="11" Columns="1">
+        <local:MMRow />
+        <local:MMRow />
+        <local:MMRow />
+        <local:MMRow />
+        <local:MMRow />
+        <local:MMRow />
+        <local:MMRow />
+        <local:MMRow />
+        <local:MMRow />
+        <local:MMRow />
+        <UniformGrid Rows="1" Columns="2">
+                <TextBox Name="tstKey" BorderThickness="0" Background="LightGray" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0, 6, 0, 0" TextChanged="tstKey_TextChanged" />
+                <Button Name="buttKlar" BorderThickness="0" Margin="0, 6, 0, 0" IsEnabled="false" Click="buttKlar_Click">Guess</Button>
+        </UniformGrid>
+    </UniformGrid>
+</Window>
